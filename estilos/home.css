@@ -19,8 +19,8 @@ main {
 /* BOX DE TEXTO */
 .container-boxtext {
     margin: auto auto;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 400px;
     border: 2px solid black;
 }
 
@@ -31,10 +31,6 @@ main {
 
 .box-p {
     padding: 12px 8px;
-}
-
-.side-bar-list img {
-    width: 200px;
 }
 
 /* -------------------- */
@@ -48,12 +44,18 @@ main {
 }
 
 .material-symbols-outlined {
-    font-size: 35px;
     padding: 10px;
     cursor: pointer;
 }
 
-.material-symbols-outlined:hover {
+.menu,
+.person {
+    font-size: 30px;
+    padding: 6px;
+}
+
+.menu:hover,
+.person:hover {
     background-color: rgba(197, 197, 197, 0.514);
     border-radius: 50%;
 
@@ -63,10 +65,13 @@ main {
 
 /* SIDEBAR */
 
+.side-bar-list img {
+    width: 180px;
+}
+
 .side-bar {
     background-color: var(--corTitulo);
     width: 340px;
-    overflow: hidden;
     transition: width 0.3s ease-in-out;
 }
 
@@ -81,11 +86,15 @@ main {
 .item {
     display: flex;
     align-items: center;
-    font-size: 25px;
-    padding: 8px 8px 8px 16px;
+    font-size: 15px;
     cursor: pointer;
     font-weight: 500;
     color: white;
+}
+
+.home,
+.dash {
+    font-size: 25px;
 }
 
 .item:hover {
@@ -94,6 +103,6 @@ main {
 }
 
 .side-bar-move {
-    background-color: var(--corTitulo);
+
     width: 0px;
 }
