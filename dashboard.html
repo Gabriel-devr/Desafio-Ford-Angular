@@ -4,45 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/dashboard.css">
 </head>
 <body>
-    <div class="Title">
-        <h1>Dashboard FORD</h1>
-    </div>
-    <div>
-        <div>
-            <h2>Veículo</h2>
-            <select name="" id="">
-                <option value=""></option>
-                <option value="">Ranger</option>
-                <option value="">Mustang</option>
-                <option value="">Territory</option>
-                <option value="">Bronco Sport</option>
-            </select>
+    <div class="container-geral">
+        <div class="nav-bar">
+            <span class="material-symbols-outlined menu">menu</span>
+            <span class="material-symbols-outlined person">person</span>
         </div>
-        <div class="totalVendas">
-            <h2>Total de Vendas</h2>
-            <p></p>
-            <p>und</p>
+        <div class="title">
+            <h1>Dashboard FORD</h1>
         </div>
-        <div class="conectados">
-            <h2>Conectados</h2>
-            <p></p>
-            <p>und</p>
+        <div class="dados-veiculos">
+            <div class="box select-h2">
+                <h2>Veículo</h2>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="">Ranger</option>
+                    <option value="">Mustang</option>
+                    <option value="">Territory</option>
+                    <option value="">Bronco Sport</option>
+                </select>
+            </div>
+            <div class="box totalVendas">
+                <h2>Total de Vendas</h2>
+                <p>23</p>
+                <p>und</p>
+            </div>
+            <div class="box conectados">
+                <h2>Conectados</h2>
+                <p>23</p>
+                <p>und</p>
+            </div>
+            <div class="box updateSoftware">
+                <h2>Update Software</h2>
+                <p>23</p>
+                <p>und</p>
+            </div>
         </div>
-        <div class="updateSoftware">
-            <h2>Update Software</h2>
-            <p></p>
-            <p>und</p>
+        <div class="carro">
+            <img src="img/mustang.png" alt="">
         </div>
-    </div>
-    <div>
-        <img src="img/mustang.png" alt="">
-    </div>
-    <div>
-        <table>
-            
-        </table>
+        <div class="container-table">
+            <table>
+                <tr class="tr1">
+                    <th>Código-Vin</th>
+                    <th>Odômetro</th>
+                    <th>Nível do Combustível</th>
+                    <th>Status</th>
+                    <th>Lat.</th>
+                    <th>Long</th>
+                </tr>
+                <tr>
+                    <td id="vin">21312312312</td>
+                    <td id="odometro">40000 km</td>
+                    <td id="combustivel">90%</td>
+                    <td id="status">60</td>
+                    <td id="lat">-12,2322</td>
+                    <td id="long">-35,2314</td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>
